@@ -1,11 +1,13 @@
 import './App.css';
 import Header from './Components/Header/Index';
 import Footer from './Components/Footer/Index';
-import { createTheme, CssBaseline, Stack, ThemeProvider, Typography } from '@mui/material';
+import { Box, Button, createTheme, CssBaseline, Stack, ThemeProvider, Typography } from '@mui/material';
 import rtlPlugin from 'stylis-plugin-rtl';
 import {prefixer} from 'stylis';
 import {CacheProvider} from '@emotion/react';
 import createCache from '@emotion/cache';
+import WestIcon from '@mui/icons-material/West';
+
 
 
 function App() {
@@ -24,10 +26,14 @@ function App() {
       background: {
         default: '#171717',
       },
+      text:{
+        primary:'#F1F5F9'
+      }
       
     },
     typography:{
       fontFamily: 'iransans , moraba'
+  
     }
   }
   
@@ -39,12 +45,19 @@ return (
   <CacheProvider value={cacheRtl}>
     <ThemeProvider theme={MoeinstaTheme} >
       <CssBaseline />
-      <Header />
-      
+      <Box className='firstdiv'><Header />
+      <Stack  direction={'column'} alignItems={'center'} justifyContent={'center'} sx={{height:'80vh' ,}}>
+
+      <Typography textAlign={'center'} fontFamily={'moraba'} fontSize={'72px'} > بهترین ها را از مونیستا بخواهید!<br/> ما تفاوت ها را رقم میزیم </Typography>
+      <Typography fontSize={'24px'} textAlign={'center'} marginBottom={'24px'} marginTop={'64px'} sx={{width:'825px'}}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</Typography>
+      <Button size='large' endIcon={<WestIcon/>} sx={{border:'2px solid #A274FF' ,borderRadius:'16px' , color:'white.main'}}> تماس با ما </Button>
+
+
+      </Stack>
 
 
 
-
+      </Box>
       <Footer />
     </ThemeProvider>
     </CacheProvider>

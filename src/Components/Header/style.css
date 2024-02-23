@@ -2,3 +2,6 @@
     width: 305px;
     height: 70px;
 }
+.headercontainer{
+    background-color:transparent !important;
+}

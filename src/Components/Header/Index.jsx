@@ -6,7 +6,7 @@ import style from './style.css'
 export default function Header() {
   return (
     <>
-      <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} mx={'20px'} my={'16px'}> 
+      <Stack className='headercontainer' direction={'row'} justifyContent={'space-between'} alignItems={'center'} px={'20px'} py={'16px'}> 
         
           <img className='mainlogo'  src='./assets/image/logo.png' />
           <Stack direction={'row'}>
@@ -18,7 +18,7 @@ export default function Header() {
 
           </Stack>
           
-            <Button   sx={{borderRadius:'16px',border:'2px solid'}} endIcon={<WestIcon/>}> تماس با ما </Button>
+            <Button size='large'   sx={{borderRadius:'16px',border:'2px solid #A274FF',color:'white.main'}} endIcon={<WestIcon/>}> تماس با ما </Button>
         
 
         
