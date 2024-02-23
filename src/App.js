@@ -1,10 +1,18 @@
 import './App.css';
 import Header from './Components/Header/Index';
 import Footer from './Components/Footer/Index';
-import { createTheme, CssBaseline, ThemeProvider, Typography } from '@mui/material';
+import { createTheme, CssBaseline, Stack, ThemeProvider, Typography } from '@mui/material';
+import rtlPlugin from 'stylis-plugin-rtl';
+import {prefixer} from 'stylis';
+import {CacheProvider} from '@emotion/react';
+import createCache from '@emotion/cache';
 
 
 function App() {
+  const cacheRtl = createCache({
+    key: 'muirtl',
+    stylisPlugins: [prefixer, rtlPlugin],
+ });
   const MoeinstaTheme = createTheme({
 
     palette: {
@@ -28,16 +36,18 @@ function App() {
 return (
 
   <>
+  <CacheProvider value={cacheRtl}>
     <ThemeProvider theme={MoeinstaTheme} >
       <CssBaseline />
       <Header />
+      
 
-      <Typography sx={{ color: 'white.main',  }}> سلام</Typography>
 
 
 
       <Footer />
     </ThemeProvider>
+    </CacheProvider>
   </>
 );
 }
