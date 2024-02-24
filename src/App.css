@@ -10,28 +10,8 @@ body{
     direction: rtl;
 }
 .firstdiv{
-    background-image: linear-gradient(
-        195deg,
-        hsl(270deg 100% 24%) 0%,
-        hsl(268deg 92% 25%) 0%,
-        hsl(268deg 89% 25%) 0%,
-        hsl(267deg 86% 24%) 0%,
-        hsl(267deg 84% 24%) 0%,
-        hsl(267deg 81% 24%) 1%,
-        hsl(266deg 79% 23%) 2%,
-        hsl(266deg 77% 23%) 3%,
-        hsl(265deg 75% 22%) 4%,
-        hsl(265deg 73% 22%) 6%,
-        hsl(265deg 70% 21%) 7%,
-        hsl(264deg 68% 20%) 10%,
-        hsl(264deg 65% 20%) 12%,
-        hsl(263deg 63% 19%) 15%,
-        hsl(263deg 60% 18%) 19%,
-        hsl(262deg 56% 17%) 23%,
-        hsl(262deg 52% 16%) 27%,
-        hsl(261deg 47% 15%) 33%,
-        hsl(260deg 41% 14%) 40%,
-        hsl(259deg 34% 13%) 48%,
-        hsl(257deg 22% 11%) 60%,
-        hsl(0deg 0% 9%) 77%
-      );}
+    background: radial-gradient(60% 50% at 100% 0%, rgba(61, 0, 124, 0.50) 0%, rgba(61, 0, 124, 0.03) 100%, rgba(61, 0, 124, 0.03) 100%)
+}
+.container{
+    width: 1018px !important;
+}
