@@ -12,6 +12,10 @@ body{
 .firstdiv{
     background: radial-gradient(60% 50% at 100% 0%, rgba(61, 0, 124, 0.50) 0%, rgba(61, 0, 124, 0.03) 100%, rgba(61, 0, 124, 0.03) 100%)
 }
-.container{
-    width: 1018px !important;
+.services-circle{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(90deg, #3D007C 0%, #A274FF 100%);
+    border-radius: 100%;
+    position: absolute;
 }

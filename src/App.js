@@ -8,6 +8,7 @@ import {CacheProvider} from '@emotion/react';
 import createCache from '@emotion/cache';
 import WestIcon from '@mui/icons-material/West';
 import OurServices from './Components/Swiper/OurServices';
+import Portfolio from './Components/Swiper/Portfolio';
 
 
 
@@ -61,6 +62,21 @@ return (
       </Stack>
       <Stack >
       <OurServices/>
+      <Box className='services-circle' sx={{translate:'-10% 100%'}}></Box>
+      <Box className='services-circle' sx={{translate:'-550% -25%'}}></Box>
+      <Box className='services-circle' sx={{translate:'-750% 150%'}}></Box>
+      </Stack>
+      <Stack mx={'auto'} sx={{width:'1018px',borderRadius:'16px'}}>
+        <Stack direction={'row'} p={'48px'} alignItems={'center'} justifyContent={'space-between'} width={'100%'} height={'430px'} my={'118px'} sx={{backgroundImage:'linear-gradient(81deg, #CC74FF 0%, #6F39BD 29%, #3D007C 100%)', borderRadius:'16px'}}> 
+          <Box width={'60%'}>
+          <Box  width={'80%'}>
+            <Typography variant='h3' fontFamily={'moraba'} fontSize={'28px'} paddingBottom={'36px'}>نمونه کارهای ما </Typography>
+            <Typography textAlign={'justify'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده</Typography>
+          </Box>
+          </Box>
+          <Stack width={'40%'} sx={{translate:'0px -15px'}}><Portfolio/></Stack>
+        </Stack>
+        
       </Stack>
       </Box>
       <Footer />

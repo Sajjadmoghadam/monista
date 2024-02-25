@@ -19,10 +19,6 @@ export default function Header() {
           </Stack>
           
             <Button size='large'   sx={{borderRadius:'16px',border:'2px solid #A274FF',color:'white.main'}} endIcon={<WestIcon/>}> تماس با ما </Button>
-        
-
-        
-        
       </Stack>
 
 
