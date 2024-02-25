@@ -19,3 +19,8 @@ body{
     border-radius: 100%;
     position: absolute;
 }
+.faq{
+    border-radius: 20px !important;
+    padding:10px 20px;
+    
+}
