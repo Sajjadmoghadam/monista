@@ -85,7 +85,7 @@ function App() {
               <Stack direction={'column'} alignItems={'center'} justifyContent={'center'} width={'80%'} mx={'auto'}>
                 <Typography variant='h2' fontFamily={'moraba'} fontSize={'42px'}>سوالات متداول</Typography>
                 <Typography textAlign={'center'} fontSize={'24px'} padding={'54px 0 27px 0px'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</Typography>
-                <Stack >
+                <Stack  >
                   <Accordion className='faq' expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{ backdropFilter: 'blur(10px)', background: " linear-gradient(180deg, rgba(241, 245, 249, 0.20) 0%, rgba(241, 245, 249, 0.10) 100%)", marginBlock: '8px' }} >
                     <AccordionSummary expandIcon={<ArrowDownwardIcon size={'large'} sx={{ color: 'white.main' }} />}>
                       <Typography sx={{}} fontSize={'24px'}>بعد از سفارش سایت مدت زمان طراحی سایت چقدر است؟</Typography>
@@ -113,10 +113,10 @@ function App() {
                 </Stack>
               </Stack>
             </Stack>
-            <Box width={"100%"} height={'1000px'} sx={{ translate: '0% -75%', backgroundImage: 'radial-gradient(  30% 40% at -10% 50%, rgba(162, 116, 255, 0.80) 0%, rgb(25,23,27,0) 100%)', position: 'absolute' }}></Box>
-            <Box width={"100%"} height={'1000px'} sx={{ translate: '0% -90%', backgroundImage: 'radial-gradient(  30% 40% at 105% 40%, rgba(162, 116, 255, 0.80) 0%, rgb(25,23,27,0) 100%)', position: 'absolute' }}></Box>
-            <Stack mx={'auto'} my={'140px'} sx={{ width: '1018px' }}>
-             <Stack>
+            <Box width={"100%"} height={'1000px'} sx={{ translate: '0% -75%', backgroundImage: 'radial-gradient(  30% 40% at -10% 50%, rgba(162, 116, 255, 0.80) 0%, rgb(25,23,27,0) 100%)', position: 'fixed' }}></Box>
+            <Box width={"100%"} height={'1000px'} sx={{ translate: '0% -90%', backgroundImage: 'radial-gradient(  30% 40% at 105% 40%, rgba(162, 116, 255, 0.80) 0%, rgb(25,23,27,0) 100%)', position: 'fixed' }}></Box>
+            <Stack mx={'auto'}  sx={{ width: '1018px' }}>
+             <Stack my={'100px'}>
              <Box><Typography textAlign={'center'} variant='h2' fontFamily={'moraba'} fontSize={'42px'}>تعرفه طراحی سایت</Typography></Box>
               <Stack direction={'row'} my={'64px'} gap={3} justifyContent={'center'} alignItems={'center'}>
                 <Stack gap={4} height={'460px'} width={'326px'} alignItems={'center'} justifyContent={'center'} sx={{ backdropFilter: 'blur(10px)', background: " linear-gradient(180deg, rgba(241, 245, 249, 0.20) 0%, rgba(241, 245, 249, 0.10) 100%)", borderRadius: '20px' }}>
@@ -155,11 +155,24 @@ function App() {
                 </Stack>
               </Stack>
              </Stack>
-             
+             <Stack marginBottom={'100px'} width={'100%'} height={'500px'} justifyContent={'center'} alignItems={'center'} bgcolor={'secondary.main'} sx={{borderRadius:'10px'}}>
+              <Stack width={'60%'} mx={'auto'} gap={4}>
+              <Stack gap={4}>
+                <Typography textAlign={'center'} variant='h2' fontFamily={'moraba'} fontSize={'42px'}>خب منتظر چی هستی؟</Typography>
+                <Typography textAlign={'center'} fontSize={'24px'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</Typography>
+              </Stack>
+              <Stack direction={'row'} justifyContent={'center'} gap={1}>
+                <Button variant='contained'sx={{backgroundColor:'primary.main',color:'white.main' ,fontSize:'32px', fontFamily:'moraba', borderRadius:'20px', padding:'0px 40px','&:hover':{backgroundColor:'primary.main'}}}>09123456789</Button> 
+                <Button variant='contained'sx={{backgroundColor:'white.main',color:'secondary.main' ,fontSize:'32px', fontFamily:'moraba', borderRadius:'20px',padding:'0px 40px','&:hover':{backgroundColor:'white.main'}}}>تماس با ما</Button> 
 
+              </Stack>
+              </Stack>
+
+             </Stack>
+             <Footer />
             </Stack>
           </Box>
-          <Footer />
+          
         </ThemeProvider>
       </CacheProvider>
     </>
