@@ -4,13 +4,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import React from 'react'
 import style from './style.css'
 
-export default function Header() {
+export default function Header(props) {
+  console.log(props);
   return (
     <>
-      <Stack className='headercontainer' direction={{md:'row',sm:'row-reverse'}} justifyContent={'space-between'} alignItems={'center'} px={'20px'} py={'16px'}> 
+      <Stack className='headercontainer' direction={{md:'row',sm:'row-reverse',xs:'row-reverse'}} justifyContent={'space-between'} alignItems={'center'} px={'20px'} py={'16px'}> 
         
           <img className='mainlogo'  src='./assets/image/logo.png' />
-          <Stack display={{md:'flex' , sm:'none'}} direction={'row'}>
+          <Stack display={{md:'flex' , sm:'none',xs:'none'}} direction={'row'}>
 
           <Button sx={{color:'white.main', fontSize:{lg:'20px',md:'16px'}, marginRight:{lg:'52px',md:'22px'}}}>خدمات ما </Button>
           <Button sx={{color:'white.main', fontSize:{lg:'20px',md:'16px'},marginRight:{lg:'52px',md:'22px'}}}>نمونه کار های ما  </Button>
@@ -18,8 +19,8 @@ export default function Header() {
           <Button sx={{color:'white.main', fontSize:{lg:'20px',md:'16px'}}}>تعرفه ها</Button>
 
           </Stack>
-          <Box display={{md:'block',sm:'none'}}><Button size='large'  sx={{borderRadius:'16px',border:'2px solid #A274FF',color:'white.main'}} endIcon={<WestIcon/>}> تماس با ما </Button></Box>
-          <Box><IconButton size= {'large'} color='white.main' ><MenuIcon sx={{color:'white.main',fontSize:'40px'}} /></IconButton></Box>
+          <Box display={{md:'block',sm:'none', xs:'none'}}><Button size='large'   sx={{borderRadius:'16px',border:'2px solid #A274FF',color:'white.main'}} endIcon={<WestIcon/>}> تماس با ما </Button></Box>
+          <Box display={{md:'none',sm:'block'}}><IconButton  size= {'large'} color='white.main' ><MenuIcon sx={{color:'white.main',fontSize:'40px'}} /></IconButton></Box>
           
       </Stack>
 

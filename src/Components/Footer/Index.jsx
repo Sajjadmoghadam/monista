@@ -9,7 +9,7 @@ export default function Footer
 () {
   return (
     <>
-    <Stack direction={'row'} alignItems={'center'} px={'20px'} justifyContent={'space-between'} height={'100px'} sx={{backgroundImage: 'linear-gradient(271deg, #3D007C 0%, #A274FF 100%)' , borderRadius:'30px 30px 0px 0px'}}>
+    <Stack direction={{md:'row', xs:'column'}} alignItems={'center'} px={'20px'} justifyContent={'space-between'} height={'100px'} sx={{backgroundImage: 'linear-gradient(271deg, #3D007C 0%, #A274FF 100%)' , borderRadius:'30px 30px 0px 0px'}}>
 
       <Box><Typography fontSize={'36px'}>با مونیستا معین بمانید!</Typography></Box>
       
