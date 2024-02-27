@@ -16,3 +16,6 @@
     width: 132px !important;
     height: 132px !important;
   }
+  .swiper-slide-shadow-left , .swiper-slide-shadow-right{
+    border-radius: 24px !important;
+  }

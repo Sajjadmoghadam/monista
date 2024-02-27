@@ -16,7 +16,9 @@ const OurServices = () => {
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
+        
         slidesPerView={'auto'}
+        initialSlide={'1'}
         
         coverflowEffect={{
           rotate: 50,

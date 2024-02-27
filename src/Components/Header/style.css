@@ -5,3 +5,10 @@
 .headercontainer{
     background-color:transparent !important;
 }
+@media screen and (max-width: 600px) {
+    .mainlogo{
+        width: 200px;
+        height: auto;
+    }
+    
+}

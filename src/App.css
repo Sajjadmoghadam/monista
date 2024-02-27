@@ -10,7 +10,8 @@ body{
     direction: rtl;
 }
 .firstdiv{
-    background: radial-gradient(60% 50% at 100% 0%, rgba(61, 0, 124, 0.50) 0%, rgba(61, 0, 124, 0.03) 100%, rgba(61, 0, 124, 0.03) 100%)
+    background: radial-gradient(60% 50% at 100% 0%, rgba(61, 0, 124, 0.50) 0%, rgba(61, 0, 124, 0.03) 100%, rgba(61, 0, 124, 0.03) 100%);
+    
 }
 .services-circle{
     width: 150px;

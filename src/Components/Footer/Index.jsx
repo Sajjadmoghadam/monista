@@ -9,14 +9,14 @@ export default function Footer
 () {
   return (
     <>
-    <Stack direction={{md:'row', xs:'column'}} alignItems={'center'} px={'20px'} justifyContent={'space-between'} height={'100px'} sx={{backgroundImage: 'linear-gradient(271deg, #3D007C 0%, #A274FF 100%)' , borderRadius:'30px 30px 0px 0px'}}>
+    <Stack direction={{md:'row', xs:'column'}} alignItems={'center'} px={'20px'} justifyContent={{md:'space-between',xs:'center'}} height={'100px'} sx={{backgroundImage: 'linear-gradient(271deg, #3D007C 0%, #A274FF 100%)' , borderRadius:'30px 30px 0px 0px'}}>
 
-      <Box><Typography fontSize={'36px'}>با مونیستا معین بمانید!</Typography></Box>
+      <Box><Typography fontSize={{sm:'36px',xs:'24px'}}>با مونیستا معین بمانید!</Typography></Box>
       
-        <Box>
-          <IconButton className='mamad' sx={{color:'#000'}} href='#'><InstagramIcon/></IconButton>
-          <IconButton sx={{color:'#000'}} href='#'><WhatsAppIcon/></IconButton>
-          <IconButton sx={{color:'#000'}} href='#'><TelegramIcon/></IconButton>
+        <Box >
+          <IconButton className='mamad' sx={{color:{md:'#000',xs:'#fff'}}} href='#'><InstagramIcon/></IconButton>
+          <IconButton sx={{color:{md:'#000',xs:'#fff'}}} href='#'><WhatsAppIcon/></IconButton>
+          <IconButton sx={{color:{md:'#000',xs:'#fff'}}} href='#'><TelegramIcon/></IconButton>
         </Box>
       
 
