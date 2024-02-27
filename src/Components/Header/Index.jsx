@@ -1,14 +1,19 @@
-import {  Button, Stack, Box, IconButton } from '@mui/material'
+import {  Button, Stack, Box, IconButton, Drawer } from '@mui/material'
 import WestIcon from '@mui/icons-material/West';
 import MenuIcon from '@mui/icons-material/Menu';
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './style.css'
 
 export default function Header(props) {
-  useEffect(()=>{
-    console.log(props);
-  },[])
+
+  const [open, setOpen] = useState(false);
+
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+ 
   return (
+
     <>
       <Stack className='headercontainer' direction={{md:'row',sm:'row-reverse',xs:'row-reverse'}} justifyContent={'space-between'} alignItems={'center'} px={'20px'} py={'16px'}> 
         
@@ -22,7 +27,16 @@ export default function Header(props) {
 
           </Stack>
           <Box display={{md:'block',sm:'none', xs:'none'}}><Button size='large'   sx={{borderRadius:'16px',border:'2px solid #A274FF',color:'white.main','&:hover':{backgroundColor:'secondary.main',border: '2px solid #3D007C'}}} endIcon={<WestIcon/>}> تماس با ما </Button></Box>
-          <Box display={{md:'none',sm:'block'}}><IconButton  size= {'large'} color='white.main' ><MenuIcon sx={{color:'white.main',fontSize:'40px'}} /></IconButton></Box>
+          <Box display={{md:'none',sm:'block'}}>
+            <IconButton onClick={toggleDrawer(true)} size= {'large'} color='white.main' ><MenuIcon sx={{color:'white.main',fontSize:'40px'}} />
+            </IconButton>
+            <Drawer className='mobile-menu' open={open} onClose={toggleDrawer(false)}  anchor='right'>
+              <Box sx={{ width: '350px' }} role="presentation">
+
+
+              </Box>
+            </Drawer>
+            </Box>
           
       </Stack>
 
