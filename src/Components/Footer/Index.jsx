@@ -11,7 +11,7 @@ export default function Footer
     <>
     <Stack direction={{md:'row', xs:'column'}} alignItems={'center'} px={'20px'} justifyContent={{md:'space-between',xs:'center'}} height={'100px'} sx={{backgroundImage: 'linear-gradient(271deg, #3D007C 0%, #A274FF 100%)' , borderRadius:'30px 30px 0px 0px'}}>
 
-      <Box><Typography fontSize={{sm:'36px',xs:'24px'}}>با مونیستا معین بمانید!</Typography></Box>
+      <Box><Typography fontFamily={'moraba'} fontSize={{sm:'36px',xs:'24px'}}>معینستا لذت خدمات حرفه ای!</Typography></Box>
       
         <Box >
           <IconButton className='mamad' sx={{color:{md:'#000',xs:'#fff'}}} href='#'><InstagramIcon/></IconButton>

@@ -34,11 +34,11 @@ const OurServices = () => {
         <SwiperSlide className='service-swiper-item'>
           <Stack p={'34px'} sx={{backdropFilter:'blur(10px)',  background:" linear-gradient(180deg, rgba(241, 245, 249, 0.20) 0%, rgba(241, 245, 249, 0.10) 100%)" , borderRadius:'24px' ,}} >
             <Stack>
-              <Typography variant='h3' fontFamily={'moraba'} fontSize={'28px'} paddingBottom={'58px'}>طراحی سایت  فروشگاهی</Typography>
+              <Typography variant='h3' fontFamily={'moraba'} fontSize={'28px'} paddingBottom={'58px'}>طراحی اپلیکیشن</Typography>
             </Stack>
             <Stack direction={'row'} gap={'28px'} alignItems={'start'} >
               <Box><Typography fontSize={'12px'} sx={{textAlign:'justify' }}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</Typography></Box>
-              <Box><img className='services-img' src="assets/image/web.png" alt="" /></Box>
+              <Box><img className='services-img' src="assets/image/apk.png" alt="" /></Box>
             </Stack>
           </Stack>
         </SwiperSlide>
@@ -56,11 +56,11 @@ const OurServices = () => {
         <SwiperSlide className='service-swiper-item'>
           <Stack p={'34px'} sx={{backdropFilter:'blur(10px)',  background:" linear-gradient(180deg, rgba(241, 245, 249, 0.20) 0%, rgba(241, 245, 249, 0.10) 100%)" , borderRadius:'24px' ,}} >
             <Stack>
-              <Typography variant='h3' fontFamily={'moraba'} fontSize={'28px'} paddingBottom={'58px'}>طراحی سایت  فروشگاهی</Typography>
+              <Typography variant='h3' fontFamily={'moraba'} fontSize={'28px'} paddingBottom={'58px'}>بهینه سازی موتور های جستجو</Typography>
             </Stack>
             <Stack direction={'row'} gap={'28px'} alignItems={'start'} >
               <Box><Typography  fontSize={'12px'} sx={{textAlign:'justify' }}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</Typography></Box>
-              <Box><img className='services-img' src="assets/image/web.png" alt="" /></Box>
+              <Box><img className='services-img' src="assets/image/seo.png" alt="" /></Box>
             </Stack>
           </Stack>
         </SwiperSlide>

@@ -1,6 +1,6 @@
 .portfolio {
     width:236px;
-    height: 292px;
+    height: 350px;
   }
   
   .portfolio-item {
@@ -14,15 +14,20 @@
     background-color: #F1F5F9;
     display: flex;
     flex-direction: column;
+    gap: 8px;
   }
-  .portfolio-item img {
+ 
+  .portfolio-item  img {
     width: 100% ;
     height: 100% ;
+    border-radius: 10px;
+    border: 1px solid #3D007C;
   }
+
   @media screen and (max-width:600px) {
     .portfolio{
-      width: 80%;
-      height: auto;
+      
+      height: 350px;
     }
     
   }

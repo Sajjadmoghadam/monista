@@ -54,8 +54,9 @@ function App() {
   const price = useRef()
   const contactUs = useRef()
 
-  const handleClick = (ref) => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  const handleClick = () => {
+    
+    contactUs.current?.scrollIntoView({ behavior: 'smooth' });
     
   };
 
@@ -77,8 +78,8 @@ function App() {
                   ]}
                   style={{whiteSpace: 'pre-line'}}/>
                 </Typography>
-                <Typography fontSize={{ lg: '24px', md: '2vw', sm: '2vw', xs: '3vw' }} textAlign={'center'} marginBottom={'24px'} marginTop={'64px'} sx={{ width: '100%' }}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</Typography>
-                <Button onClick={handleClick({contactUs})} size='large' endIcon={<WestIcon />} sx={{ border: '2px solid #A274FF', borderRadius: '16px', color: 'white.main' ,'&:hover':{backgroundColor:'secondary.main',border: '2px solid #3D007C'}}}> تماس با ما </Button>
+                <Typography fontSize={{ lg: '24px', md: '2vw', sm: '2vw', xs: '3vw' }} textAlign={'center'} marginBottom={'24px'} marginTop={'64px'} sx={{ width: '100%' }}>می‌دونی که این روزا همه چیز تو دنیای وب می‌گذره، درسته؟ وب‌سایت تو اولین جاییه که مشتریا با کسب‌وکارت آشنا می‌شن. حالا فکر کن یه وب‌سایت داشته باشی که نه تنها خفن باشه، بلکه دقیقا همون چیزی باشه که هر کی نگاه می‌کنه بگه واو! دوست داری با هم یه کاری بکنیم که همه توش بمونن؟ فقط یه زنگ به ما بزن. منتظر شنیدن صدای گرمت هستیم!</Typography>
+                <Button onClick={handleClick} size='large' endIcon={<WestIcon />} sx={{ border: '2px solid #A274FF', borderRadius: '16px', color: 'white.main' ,'&:hover':{backgroundColor:'secondary.main',border: '2px solid #3D007C'}}}> تماس با ما </Button>
               </Stack>
               <Stack ref={ourServices} sx={{ textAlign: 'center' }}>
                 <Typography variant='h2' fontFamily={'moraba'} fontSize={{ lg: '42px', md: '3vw', sm: '3vw', xs: '4vw' }}>گروه ما چه خدماتی ارائه میدهد؟</Typography>
@@ -99,21 +100,21 @@ function App() {
                 <Box width={{ md: '60%', xs: '90%' }}>
                   <Box width={{ md: '80%', xs: '100%' }} textAlign={{ md: 'unset', xs: 'center' }}>
                     <Typography variant='h3' fontFamily={'moraba'} fontSize={'28px'} paddingBottom={'36px'}>نمونه کارهای ما </Typography>
-                    <Typography textAlign={'justify'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده</Typography>
+                    <Typography textAlign={'justify'}>پاسخ سوالات شما پیرامون خدمات طراحی سایت معینستا</Typography>
                   </Box>
                 </Box>
                 <Stack width={{ md: '40%', xs: '90%' }} justifyContent={'center'} alignItems={'center'} sx={{ translate: { md: '0px -15px', xs: '0px' } }}><Portfolio /></Stack>
               </Stack>
               <Stack ref={faq} direction={'column'} alignItems={'center'} justifyContent={'center'} width={'100%'} mx={'auto'}>
                 <Typography variant='h2' fontFamily={'moraba'} fontSize={{ lg: '42px', md: '3vw', sm: '4vw', xs: '5vw' }}>سوالات متداول</Typography>
-                <Typography textAlign={'center'} fontSize={{ lg: '24px', md: '2vw', sm: '2vw', xs: '3vw' }} padding={'54px 0 27px 0px'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</Typography>
+                <Typography textAlign={'center'} fontSize={{ lg: '24px', md: '2vw', sm: '2vw', xs: '3vw' }} padding={'54px 0 27px 0px'}>پاسخ سوالات شما پیرامون خدمات طراحی سایت معینستا</Typography>
                 <Stack zIndex={10} height={'450px'} >
                   <Accordion className='faq'  expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{ paddingInline:{md:'20px',xs:'0px'}, backdropFilter: 'blur(10px)', background: " linear-gradient(180deg, rgba(241, 245, 249, 0.20) 0%, rgba(241, 245, 249, 0.10) 100%)", marginBlock: '8px' }} >
                     <AccordionSummary expandIcon={<ArrowDownwardIcon size={'large'} sx={{ color: 'white.main' }} />}>
                       <Typography sx={{}} fontSize={{ lg: '24px', md: '2vw', sm: '2vw', xs: '3vw' }}>بعد از سفارش سایت مدت زمان طراحی سایت چقدر است؟</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <Typography textAlign={'justify'} fontSize={{ lg: '18px', md: '2vw', sm: '2vw', xs: '3vw' }}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده</Typography>
+                      <Typography textAlign={'justify'} fontSize={{ lg: '18px', md: '2vw', sm: '2vw', xs: '3vw' }}>مدت زمان طراحی سایت بین 10 الی 14 روز  می باشد.</Typography>
                     </AccordionDetails>
                   </Accordion>
                   <Accordion className='faq'  expanded={expanded === 'panel2'} onChange={handleChange('panel2')} sx={{ paddingInline:{md:'20px',xs:'0px'}, backdropFilter: 'blur(10px)', background: " linear-gradient(180deg, rgba(241, 245, 249, 0.20) 0%, rgba(241, 245, 249, 0.10) 100%)", marginBlock: '8px' }} >
@@ -144,50 +145,57 @@ function App() {
                 <Box><Typography textAlign={'center'} variant='h2' fontFamily={'moraba'} fontSize={{ lg: '42px', md: '3vw', sm: '4vw', xs: '6vw' }}>تعرفه طراحی سایت</Typography></Box>
                 <Stack direction={{ md: 'row', xs: 'column' }} my={'64px'} gap={3} justifyContent={'center'} alignItems={'center'}>
                   <Stack gap={4} height={{ md: '460px', sm: '500px', xs: '500px' }} width={{ md: '326px', sm: '450px', xs: "80%" }} alignItems={'center'} justifyContent={'center'} sx={{ backdropFilter: 'blur(10px)', background: " linear-gradient(180deg, rgba(241, 245, 249, 0.20) 0%, rgba(241, 245, 249, 0.10) 100%)", borderRadius: '20px' }}>
-                    <Stack justifyContent={'center'} alignItems={'center'} width={'115px'} height={"40px"} sx={{ borderRadius: '20px', border: '2px solid ' }}><Typography>پلن حرفه ای</Typography></Stack>
-                    <Typography fontSize={{ lg: '32px', md: '3vw', xs: '32px' }}>24.800.00 سالیانه</Typography>
+                    <Stack justifyContent={'center'} alignItems={'center'} width={'115px'} height={"40px"} sx={{ borderRadius: '20px', border: '2px solid ' }}><Typography>پلن برنزی</Typography></Stack>
+                    <Typography fontSize={{ lg: '32px', md: '3vw', xs: '32px' }}>14.800.000 تومان</Typography>
                     <Stack alignItems={'center'} gap={1}>
-                      <Typography fontFamily={'moraba'} fontSize={'24px'}>دامنه بین المللی</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>دامنه ir</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>اخذ ساماندهی</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>سئو  برندینگ</Typography>
-                      <Typography fontFamily={'moraba'} fontSize={'24px'}>طراحی بنر متحرک</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>پشتیبانی یک ساله</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>آموزش رایگان</Typography>
+
                     </Stack>
-                    <Button variant='contained' fontFamily={'moraba'} sx={{ backgroundColor: 'white.main', color: '#000', fontFamily: 'moraba', fontSize: '12px', borderRadius: '30px', width: '164px', '&:hover':{color:'#fff'} }} >همین الان شروع کنید</Button>
+                    <Button href='tel:09982259628' variant='contained' fontFamily={'moraba'} sx={{ backgroundColor: 'white.main', color: '#000', fontFamily: 'moraba', fontSize: '12px', borderRadius: '30px', width: '164px', '&:hover':{color:'#fff'} }} >همین الان شروع کنید</Button>
                   </Stack>
                   <Stack gap={7} height={{ md: '600px', sm: '650px', xs: '650px' }} width={{ md: '326px', sm: '450px', xs: "80%" }} alignItems={'center'} justifyContent={'center'} sx={{ backgroundColor: 'secondary.main', borderRadius: '20px' }}>
-                    <Stack justifyContent={'center'} alignItems={'center'} width={'115px'} height={"40px"} sx={{ borderRadius: '20px', border: '2px solid ' }}><Typography>پلن حرفه ای</Typography></Stack>
-                    <Typography fontSize={{ lg: '32px', md: '3vw', xs: '32px' }}>24.800.00 سالیانه</Typography>
+                    <Stack justifyContent={'center'} alignItems={'center'} width={'115px'} height={"40px"} sx={{ borderRadius: '20px', border: '2px solid ' }}><Typography>پلن طلایی</Typography></Stack>
+                    <Typography fontSize={{ lg: '32px', md: '3vw', xs: '32px' }}>24.800.000 تومان</Typography>
                     <Stack alignItems={'center'} gap={1}>
-                      <Typography fontFamily={'moraba'} fontSize={'24px'}>دامنه بین المللی</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>دامنه com</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>اخذ ساماندهی</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>دریافت اینماد</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>سئو  برندینگ</Typography>
-                      <Typography fontFamily={'moraba'} fontSize={'24px'}>طراحی بنر متحرک</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>پشتیبانی یک ساله</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>آموزش رایگان</Typography>
+
                     </Stack>
-                    <Button variant='contained' fontFamily={'moraba'} sx={{ backgroundColor: 'white.main', color: '#000', fontFamily: 'moraba', fontSize: '12px', borderRadius: '30px', width: '164px', '&:hover':{color:'#fff'} }} >همین الان شروع کنید</Button>
+                    <Button href='tel:09982259628' variant='contained' fontFamily={'moraba'} sx={{ backgroundColor: 'white.main', color: '#000', fontFamily: 'moraba', fontSize: '12px', borderRadius: '30px', width: '164px', '&:hover':{color:'#fff'} }} >همین الان شروع کنید</Button>
 
                   </Stack>
                   <Stack gap={4} height={{ md: '460px', sm: '500px', xs: '500px' }} width={{ md: '326px', sm: '450px', xs: "80%" }} alignItems={'center'} justifyContent={'center'} sx={{ backdropFilter: 'blur(10px)', background: " linear-gradient(180deg, rgba(241, 245, 249, 0.20) 0%, rgba(241, 245, 249, 0.10) 100%)", borderRadius: '20px' }}>
-                    <Stack justifyContent={'center'} alignItems={'center'} width={'115px'} height={"40px"} sx={{ borderRadius: '20px', border: '2px solid ' }}><Typography>پلن حرفه ای</Typography></Stack>
-                    <Typography fontSize={{ lg: '32px', md: '3vw', xs: '32px' }}>24.800.00 سالیانه</Typography>
+                    <Stack justifyContent={'center'} alignItems={'center'} width={'115px'} height={"40px"} sx={{ borderRadius: '20px', border: '2px solid ' }}><Typography>پلن نقره ای</Typography></Stack>
+                    <Typography fontSize={{ lg: '32px', md: '3vw', xs: '32px' }}>19.800.000 تومان</Typography>
                     <Stack alignItems={'center'} gap={1}>
-                      <Typography fontFamily={'moraba'} fontSize={'24px'}>دامنه بین المللی</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>دامنه com</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>اخذ ساماندهی</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>سئو  برندینگ</Typography>
-                      <Typography fontFamily={'moraba'} fontSize={'24px'}>طراحی بنر متحرک</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>پشتیبانی یک ساله</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>آموزش رایگان</Typography>
+
                     </Stack>
-                    <Button variant='contained' fontFamily={'moraba'} sx={{ backgroundColor: 'white.main', color: '#000', fontFamily: 'moraba', fontSize: '12px', borderRadius: '30px', width: '164px' , '&:hover':{color:'#fff'} }} >همین الان شروع کنید</Button>
+                    <Button href='tel:09982259628' variant='contained' fontFamily={'moraba'} sx={{ backgroundColor: 'white.main', color: '#000', fontFamily: 'moraba', fontSize: '12px', borderRadius: '30px', width: '164px' , '&:hover':{color:'#fff'} }} >همین الان شروع کنید</Button>
                   </Stack>
                 </Stack>
               </Stack>
-              <Stack ref={contactUs} marginBottom={'100px'} width={'100%'} py={'20px'} height={{ sm: '500px', xs: 'auto' }} justifyContent={'center'} alignItems={'center'} bgcolor={'secondary.main'} sx={{ borderRadius: '10px' }}>
+              <Stack ref={contactUs} marginBottom={'100px'} width={'100%'} py={'20px'} height={{ md: '500px', xs: 'auto' }} justifyContent={'center'} alignItems={'center'} bgcolor={'secondary.main'} sx={{ borderRadius: '10px' }}>
                 <Stack width={'60%'} mx={'auto'} gap={4}>
                   <Stack gap={4}>
                     <Typography textAlign={'center'} variant='h2' fontFamily={'moraba'} fontSize={{ lg: '42px', md: '3vw', sm: '32px', xs: '22px' }}>خب منتظر چی هستی؟</Typography>
-                    <Typography textAlign={'center'} fontSize={{ lg: '24px', md: '2vw', sm: '24px', xs: '16px' }}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</Typography>
+                    <Typography textAlign={'center'} fontSize={{ lg: '24px', md: '2vw', sm: '18px', xs: '16px' }}></Typography>
                   </Stack>
                   <Stack direction={{ md: 'row', xs: 'column' }} justifyContent={'center'} gap={1}>
-                    <Button variant='contained' sx={{ backgroundColor: 'primary.main', color: 'white.main', fontSize: { lg: '32px', md: '24px', sm: '32px', xs: '24px' }, borderRadius: '20px', padding: '0px 40px', '&:hover': { backgroundColor: 'primary.main' } }}>09123456789</Button>
-                    <Button variant='contained' sx={{ backgroundColor: 'white.main', color: 'secondary.main', fontSize: { lg: '32px', md: '24px', sm: '32px', xs: '24px' }, fontFamily: 'moraba', borderRadius: '20px', padding: '0px 40px', '&:hover': { backgroundColor: 'white.main' } }}>تماس با ما</Button>
+                    <Button href='tel:09982259628' variant='contained' sx={{ backgroundColor: 'primary.main', color: 'white.main', fontSize: { lg: '32px', md: '24px', sm: '26px', xs: '24px' }, borderRadius: '20px', padding: '0px 40px', '&:hover': { backgroundColor: 'primary.main' } }}>09982259628</Button>
+                    <Button href='tel:09982259628' variant='contained' sx={{ backgroundColor: 'white.main', color: 'secondary.main', fontSize: { lg: '32px', md: '24px', sm: '26px', xs: '24px' }, fontFamily: 'moraba', borderRadius: '20px', padding: '0px 40px', '&:hover': { backgroundColor: 'white.main' } }}>تماس با ما</Button>
 
                   </Stack>
                 </Stack>

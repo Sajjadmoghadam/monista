@@ -3,6 +3,10 @@
     src: url(../public/assets/fonts/IRANSansWebFaNum.woff2);
 }
 @font-face {
+    font-family: iransans-b;
+    src: url(../public/assets/fonts/IRANSansFaNumBold.ttf);
+}
+@font-face {
     font-family: moraba;
     src: url(../public/assets/fonts/Morabba-Bold.woff2);
 }
