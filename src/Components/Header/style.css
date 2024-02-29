@@ -5,6 +5,14 @@
 .headercontainer{
     background-color:transparent !important;
 }
+.openMenu{
+    transform: translateX(0px);
+    transition: all 0.5s ease;
+}
+.closeMenu{
+    transform: translateX(250px);
+    transition: all 0.5s ease;
+}
 @media screen and (max-width: 600px) {
     .mainlogo{
         width: 200px;
