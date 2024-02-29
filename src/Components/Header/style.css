@@ -4,6 +4,7 @@
 }
 .headercontainer{
     background-color:transparent !important;
+    -webkit-backdrop-filter: blur(20px) !important;
 }
 .openMenu{
     transform: translateX(0px);

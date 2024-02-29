@@ -13,6 +13,8 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { useRef, useState } from 'react';
 import MobileOurServices from './Components/Swiper/MobileOurServices/Index';
 import { TypeAnimation } from 'react-type-animation';
+import BasicSpeedDial from './Components/SpeedDial/Index';
+
 
 
 function App() {
@@ -70,7 +72,7 @@ function App() {
           <Box className='firstdiv'>
             <Header ourServices={ourServices} portfolio={portfolio} faq={faq} price={price} contactUs={contactUs} handleClick={handleClick} />
             <Stack mx={'auto'} sx={{ width: { lg: '1018px', md: '80%', sm: '80%', xs: '90%' } }}>
-              <Stack direction={'column'} alignItems={'center'} justifyContent={'center'} sx={{ height: { lg: '80vh', md: '70vh', sm: '60vh', xs: '90vh' }, }}>
+              <Stack direction={'column'} alignItems={'center'} justifyContent={'center'} sx={{ height: { lg: '100vh', md: '70vh', sm: '60vh', xs: '90vh' }, }}>
                 <Typography textAlign={'center'} fontFamily={'moraba'} fontSize={{ lg: '72px', md: '6vw', sm: '6vw', xs: '6vw' }} >
                   <TypeAnimation sequence={[
                     'بهترین ها را از مونیستا بخواهید! \n ما تفاوت ها را رقم میزنیم ',
@@ -158,7 +160,7 @@ function App() {
                     <Typography fontSize={{ lg: '32px', md: '3vw', xs: '32px' }}>14.800.000 تومان</Typography>
                     <Stack alignItems={'center'} gap={1}>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>دامنه ir</Typography>
-                      <Typography fontFamily={'moraba'} fontSize={'24px'}>اخذ ساماندهی</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>هاست رایگان یک ساله</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>سئو  برندینگ</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>پشتیبانی یک ساله</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>آموزش رایگان</Typography>
@@ -171,7 +173,7 @@ function App() {
                     <Typography fontSize={{ lg: '32px', md: '3vw', xs: '32px' }}>24.800.000 تومان</Typography>
                     <Stack alignItems={'center'} gap={1}>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>دامنه com</Typography>
-                      <Typography fontFamily={'moraba'} fontSize={'24px'}>اخذ ساماندهی</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>هاست رایگان یک ساله</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>دریافت اینماد</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>سئو  برندینگ</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>پشتیبانی یک ساله</Typography>
@@ -186,7 +188,7 @@ function App() {
                     <Typography fontSize={{ lg: '32px', md: '3vw', xs: '32px' }}>19.800.000 تومان</Typography>
                     <Stack alignItems={'center'} gap={1}>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>دامنه com</Typography>
-                      <Typography fontFamily={'moraba'} fontSize={'24px'}>اخذ ساماندهی</Typography>
+                      <Typography fontFamily={'moraba'} fontSize={'24px'}>هاست رایگان یک ساله</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>سئو  برندینگ</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>پشتیبانی یک ساله</Typography>
                       <Typography fontFamily={'moraba'} fontSize={'24px'}>آموزش رایگان</Typography>
@@ -212,21 +214,7 @@ function App() {
               <Footer />
             </Stack>
           </Box>
-          {/* <Box>
-            <SpeedDial
-              ariaLabel="SpeedDial basic example"
-              sx={{ position: 'absolute', bottom: 16, right: 16 }}
-              icon={<SpeedDialIcon />}
-            >
-              {actions.map((action) => (
-                <SpeedDialAction
-                  key={action.name}
-                  icon={action.icon}
-                  tooltipTitle={action.name}
-                />
-              ))}
-            </SpeedDial>
-          </Box> */}
+          <BasicSpeedDial/>
 
         </ThemeProvider>
       </CacheProvider>
