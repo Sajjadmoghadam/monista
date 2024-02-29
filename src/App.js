@@ -70,7 +70,7 @@ function App() {
           <Box className='firstdiv'>
             <Header ourServices={ourServices} portfolio={portfolio} faq={faq} price={price} contactUs={contactUs} handleClick={handleClick} />
             <Stack mx={'auto'} sx={{ width: { lg: '1018px', md: '80%', sm: '80%', xs: '90%' } }}>
-              <Stack direction={'column'} alignItems={'center'} justifyContent={'center'} sx={{ height: { lg: '80vh', md: '60vh', sm: '60vh', xs: '40vh' }, }}>
+              <Stack direction={'column'} alignItems={'center'} justifyContent={'center'} sx={{ height: { lg: '80vh', md: '70vh', sm: '60vh', xs: '90vh' }, }}>
                 <Typography textAlign={'center'} fontFamily={'moraba'} fontSize={{ lg: '72px', md: '6vw', sm: '6vw', xs: '6vw' }} >
                   <TypeAnimation sequence={[
                     'بهترین ها را از مونیستا بخواهید! \n ما تفاوت ها را رقم میزنیم ',
@@ -78,12 +78,12 @@ function App() {
                   ]}
                     style={{ whiteSpace: 'pre-line' }} />
                 </Typography>
-                <Typography fontSize={{ lg: '24px', md: '2vw', sm: '2vw', xs: '3vw' }} textAlign={'center'} marginBottom={'24px'} marginTop={'64px'} sx={{ width: '100%' }}>می‌دونی که این روزا همه چیز تو دنیای وب می‌گذره، درسته؟ وب‌سایت تو اولین جاییه که مشتریا با کسب‌وکارت آشنا می‌شن. حالا فکر کن یه وب‌سایت داشته باشی که نه تنها خفن باشه، بلکه دقیقا همون چیزی باشه که هر کی نگاه می‌کنه بگه واو! دوست داری با هم یه کاری بکنیم که همه توش بمونن؟ فقط یه زنگ به ما بزن. منتظر شنیدن صدای گرمت هستیم!</Typography>
-                <Button onClick={handleClick}  endIcon={<WestIcon />} sx={{ border: '2px solid #A274FF', borderRadius: '16px', color: 'white.main', fontSize:{sm:'large', xs:'12px'} ,'&:hover': { backgroundColor: 'secondary.main', border: '2px solid #3D007C' } }}> تماس با ما </Button>
+                <Typography fontSize={{ lg: '24px', md: '2vw', sm: '2vw', xs: '4vw' }} textAlign={'center'} marginBottom={'24px'} marginTop={'64px'} sx={{ width: '100%' }}>می‌دونی که این روزا همه چیز تو دنیای وب می‌گذره، درسته؟ وب‌سایت تو اولین جاییه که مشتریاتون با کسب‌وکارت آشنا می‌شن. حالا فکر کن یه وب‌سایت داشته باشی که نه تنها خفن باشه، بلکه دقیقا همون چیزی باشه که هر کی نگاه می‌کنه بگه واو! دوست داری با هم یه کاری بکنیم که همه توش بمونن؟ فقط یه زنگ به ما بزن. منتظر شنیدن صدای گرمت هستیم!</Typography>
+                <Button onClick={handleClick} endIcon={<WestIcon />} sx={{ border: '2px solid #A274FF', borderRadius: '16px', color: 'white.main', fontSize: { sm: 'large', xs: '12px' }, '&:hover': { backgroundColor: 'secondary.main', border: '2px solid #3D007C' } }}> تماس با ما </Button>
               </Stack>
               <Stack ref={ourServices} sx={{ textAlign: 'center' }}>
-                <Typography variant='h2' fontFamily={'moraba'} fontSize={{ lg: '42px', md: '3vw', sm: '3vw', xs: '4vw' }}>گروه ما چه خدماتی ارائه میدهد؟</Typography>
-                <Typography textAlign={'center'} fontSize={{ lg: '24px', md: '2vw', sm: '2vw', xs: '3vw' }} sx={{ marginBottom: '57px', marginTop: '57px' }}>
+                <Typography variant='h2' fontFamily={'moraba'} fontSize={{ lg: '42px', md: '3vw', sm: '3vw', xs: '6vw' }}>گروه ما چه خدماتی ارائه میدهد؟</Typography>
+                <Typography textAlign={'center'} fontSize={{ lg: '24px', md: '2vw', sm: '2vw', xs: '3.5vw' }} sx={{ marginBottom: '57px', marginTop: '57px' }}>
                   ما خدمات تخصصی طراحی وبسایت، ساخت اپلیکیشن موبایل و بهینه‌سازی SEO ارائه می‌دهیم تا کسب‌وکار شما در دنیای دیجیتال بدرخشد.</Typography>
               </Stack>
               <Stack display={{ lg: 'none', md: 'flex', sm: 'flex', xs: 'flex' }}>
@@ -101,14 +101,14 @@ function App() {
                 <Box width={{ md: '60%', xs: '90%' }}>
                   <Box width={{ md: '80%', xs: '100%' }} textAlign={{ md: 'unset', xs: 'center' }}>
                     <Typography variant='h3' fontFamily={'moraba'} fontSize={'28px'} paddingBottom={'36px'}>نمونه کارهای ما </Typography>
-                    <Typography textAlign={'justify'}>بررسی نمونه کارهای شرکت طراحی سایت قبل از سفارش طراحی سایت، بسیار مهم و حیاتی است. این کار به شما کمک می‌کند تا با شناخت بهتر از توانایی‌ها و قابلیت‌های شرکت مورد نظر، بتوانید تصمیم بهتری در خصوص انتخاب آن بگیرید. با بررسی نمونه کارهای شرکت طراحی سایت، می‌توانید با کیفیت و استانداردهای طراحی وب سایت آن شرکت آشنا شوید. همچنین، مشاهده نمونه کارها به شما اجازه می‌دهد تا با رضایت خود، گام بعدی را در رابطه با سفارش طراحی سایت بگیرید.</Typography>
+                    <Typography textAlign={'justify'} >نمونه کار طراحی سایت های فروشگاهی، آموزشی، شرکتی، خبری و… را که مشاهده می کنید همه پروژه های اجرا شده کسب و کارهای آنلاینی هست که درحال کار هستند. همه این نمونه کارهای طراحی سایت با سورسی بهینه و طبق استاندارهای گوگل طراحی شده است. این ادعا به پشتوانه طراحی بی نظیر و پیاده سازی قوی و باکیفیت سایت های بسیاری برای برندها و استارتاپ های معتبر ایران می باشد.</Typography>
                   </Box>
                 </Box>
                 <Stack width={{ md: '40%', xs: '90%' }} justifyContent={'center'} alignItems={'center'} sx={{ translate: { md: '0px -15px', xs: '0px' } }}><Portfolio /></Stack>
               </Stack>
               <Stack ref={faq} direction={'column'} alignItems={'center'} justifyContent={'center'} width={'100%'} mx={'auto'}>
-                <Typography variant='h2' fontFamily={'moraba'} fontSize={{ lg: '42px', md: '3vw', sm: '4vw', xs: '5vw' }}>سوالات متداول</Typography>
-                <Typography textAlign={'center'} fontSize={{ lg: '24px', md: '2vw', sm: '2vw', xs: '3vw' }} padding={'54px 0 27px 0px'}>پاسخ سوالات شما پیرامون خدمات طراحی سایت معینستا</Typography>
+                <Typography variant='h2' fontFamily={'moraba'} fontSize={{ lg: '42px', md: '3vw', sm: '6vw', xs: '5vw' }}>سوالات متداول</Typography>
+                <Typography textAlign={'center'} fontSize={{ lg: '24px', md: '2vw', sm: '3vw', xs: '3.5vw' }} padding={'54px 0 27px 0px'}>پاسخ سوالات شما پیرامون خدمات طراحی سایت معینستا</Typography>
                 <Stack zIndex={10} height={'500px'} >
                   <Accordion className='faq' expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{ paddingInline: { md: '20px', xs: '0px' }, backdropFilter: 'blur(10px)', background: " linear-gradient(180deg, rgba(241, 245, 249, 0.20) 0%, rgba(241, 245, 249, 0.10) 100%)", marginBlock: '8px' }} >
                     <AccordionSummary expandIcon={<ArrowDownwardIcon size={'large'} sx={{ color: 'white.main' }} />}>

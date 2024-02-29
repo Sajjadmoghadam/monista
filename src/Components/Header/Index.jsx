@@ -36,7 +36,7 @@ export default function Header({ ourServices, portfolio, faq, price, contactUs }
   return (
 
     <>
-      <Stack className='headercontainer' direction={{ md: 'row', sm: 'row-reverse', xs: 'row-reverse' }} justifyContent={'space-between'} alignItems={'center'} px={'20px'} py={'16px'}>
+      <Stack className='headercontainer' zIndex={20} direction={{ md: 'row', sm: 'row-reverse', xs: 'row-reverse' }} justifyContent={'space-between'} alignItems={'center'} px={'20px'} py={'16px'}  sx={{position:'sticky', top:0, right:0 ,backdropFilter:'blur(20px)'}}>
 
         <img className='mainlogo' src='./assets/image/logo.png' />
         <Stack display={{ md: 'flex', sm: 'none', xs: 'none' }} direction={'row'}>
