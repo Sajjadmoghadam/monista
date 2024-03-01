@@ -23,8 +23,8 @@ export default function BasicSpeedDial() {
             icon={<Button href='https://rubika.ir/moeinsta'><img className='speedDialIteme' src="assets/image/rubika.png" alt="" /></Button>}
             />
           <SpeedDialAction
-            key={'bale'}
-            icon={<Button><img className='speedDialIteme' src="assets/image/bale.png" alt="" /></Button>}
+            key={'sorosh'}
+            icon={<Button href='https://splus.ir/moeinsta'><img className='speedDialIteme' src="assets/image/sorosh.png" alt="" /></Button>}
             />
           <SpeedDialAction
             key={'telegram'}
