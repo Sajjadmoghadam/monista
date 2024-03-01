@@ -16,11 +16,11 @@ export default function BasicSpeedDial() {
       >
           <SpeedDialAction
             key={'eitaa'}
-            icon={<Button><img className='speedDialIteme' src="assets/image/eitaa.png" alt="" /></Button>}
+            icon={<Button href='https://eitaa.ir/moeinsta'><img className='speedDialIteme' src="assets/image/eitaa.png" alt="" /></Button>}
             />
           <SpeedDialAction
             key={'rubika'}
-            icon={<Button><img className='speedDialIteme' src="assets/image/rubika.png" alt="" /></Button>}
+            icon={<Button href='https://rubika.ir/moeinsta'><img className='speedDialIteme' src="assets/image/rubika.png" alt="" /></Button>}
             />
           <SpeedDialAction
             key={'bale'}
@@ -28,11 +28,11 @@ export default function BasicSpeedDial() {
             />
           <SpeedDialAction
             key={'telegram'}
-            icon={<Button><img className='speedDialIteme' src="assets/image/telegram.png" alt="" /></Button>}
+            icon={<Button href='https://t.me/moeinsta0'><img className='speedDialIteme' src="assets/image/telegram.png" alt="" /></Button>}
             />
           <SpeedDialAction
             key={'whatsapp'}
-            icon={<Button><img className='speedDialIteme' src="assets/image/whatsapp.png" alt="" /></Button>}
+            icon={<Button href='https://wa.me/09982259628' ><img className='speedDialIteme' src="assets/image/whatsapp.png" alt="" /></Button>}
             />
       </SpeedDial>
    
