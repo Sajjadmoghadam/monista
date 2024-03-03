@@ -14,9 +14,8 @@ export default function Footer
       <Box><Typography fontFamily={'moraba'} fontSize={{sm:'36px',xs:'24px'}}>معینستا لذت خدمات حرفه ای!</Typography></Box>
       
         <Box >
-          <IconButton className='mamad' sx={{color:"#fff"}} href='#'><InstagramIcon/></IconButton>
-          <IconButton sx={{color:"#fff"}} href='#'><WhatsAppIcon/></IconButton>
-          <IconButton sx={{color:"#fff"}} href='#'><TelegramIcon/></IconButton>
+          <IconButton sx={{color:"#fff"}} href='https://wa.me/09982259628'><WhatsAppIcon/></IconButton>
+          <IconButton sx={{color:"#fff"}} href='https://t.me/moeinsta0'><TelegramIcon/></IconButton>
         </Box>
       
 

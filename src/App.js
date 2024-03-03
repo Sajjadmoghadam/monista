@@ -72,7 +72,7 @@ function App() {
           <Box className='firstdiv'>
             <Header ourServices={ourServices} portfolio={portfolio} faq={faq} price={price} contactUs={contactUs} handleClick={handleClick} />
             <Stack mx={'auto'} sx={{ width: { lg: '1018px', md: '80%', sm: '80%', xs: '90%' } }}>
-              <Stack direction={'column'} alignItems={'center'} justifyContent={'center'} sx={{ height: { lg: '100vh', md: '70vh', sm: '60vh', xs: '90vh' }, }}>
+              <Stack direction={'column'} alignItems={'center'} justifyContent={'center'} sx={{ height: { lg: '100vh', md: '70vh', sm: '60vh', xs: '70vh' }, }}>
                 <Typography textAlign={'center'} fontFamily={'moraba'} fontSize={{ lg: '72px', md: '6vw', sm: '6vw', xs: '6vw' }} >
                   <TypeAnimation sequence={[
                     'بهترین ها را از مونیستا بخواهید! \n ما تفاوت ها را رقم میزنیم ',
@@ -106,7 +106,7 @@ function App() {
                     <Typography textAlign={'justify'} >نمونه کار طراحی سایت های فروشگاهی، آموزشی، شرکتی، خبری و… را که مشاهده می کنید همه پروژه های اجرا شده کسب و کارهای آنلاینی هست که درحال کار هستند. همه این نمونه کارهای طراحی سایت با سورسی بهینه و طبق استاندارهای گوگل طراحی شده است. این ادعا به پشتوانه طراحی بی نظیر و پیاده سازی قوی و باکیفیت سایت های بسیاری برای برندها و استارتاپ های معتبر ایران می باشد.</Typography>
                   </Box>
                 </Box>
-                <Stack width={{ md: '40%', xs: '90%' }} justifyContent={'center'} alignItems={'center'} sx={{ translate: { md: '0px -15px', xs: '0px' } }}><Portfolio /></Stack>
+                <Stack width={{ md: '40%', xs: '80%' }} justifyContent={'center'} alignItems={'center'} sx={{ translate: { md: '0px -15px', xs: '0px' } }}><Portfolio /></Stack>
               </Stack>
               <Stack ref={faq} direction={'column'} alignItems={'center'} justifyContent={'center'} width={'100%'} mx={'auto'}>
                 <Typography variant='h2' fontFamily={'moraba'} fontSize={{ lg: '42px', md: '3vw', sm: '6vw', xs: '5vw' }}>سوالات متداول</Typography>
